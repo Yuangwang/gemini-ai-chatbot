@@ -1,0 +1,11 @@
+runConfig:
+  cpu: 2
+  minInstances: 0
+  maxInstances: 14
+  concurrency: 2
+  memoryMiB: 1024
+
+env:
+  # Read from SecretManager at build & runtime.
+  - variable: GOOGLE_GENERATIVE_AI_API_KEY
+    secret: GOOGLE_GENERATIVE_AI_API_KEY
